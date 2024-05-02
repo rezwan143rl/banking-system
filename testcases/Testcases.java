@@ -47,11 +47,17 @@ public class Testcases {
         LinkedList column4 = new LinkedList();
 
         String csvFile = "C:\\Users\\rizwa\\Desktop\\java215\\testcases\\src\\testcases\\Accounts_-2015983111.csv";
+        
         String line;
         String csvSplitBy = ",";
+        boolean firstRow = true; // Flag to skip the first row
 
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             while ((line = br.readLine()) != null) {
+                if (firstRow) {
+                    firstRow = false;
+                    continue; // Skip the first row
+                }
                 String[] data = line.split(csvSplitBy);
                 if (data.length == 4) {
                     column1.insert(data[0]);
