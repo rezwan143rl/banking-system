@@ -4,27 +4,27 @@ public class Customer {
         private String lastName;
 
         public Customer() {
-        }                        // constructor without parameter
+        }
 
         public Customer(String firstName, String lastName) {
-            this.firstName = firstName;   
-            this.lastName = lastName;                // constructor with parameter 
+            this.firstName = firstName;
+            this.lastName = lastName;
         }
 
         public String getFirstName() {
-            return firstName;                //getter method to access private variables 
+            return firstName;
         }
 
         public void setFirstName(String FName) {
-            this.firstName = FName;                //setter method to set private variables 
+            this.firstName = FName;
         }
 
         public String getLastName() {
-            return lastName;                //getter method to access private variables 
+            return lastName;
         }
 
-        public void setLastName(String LName) {        
-            this.lastName = lastName;                //setter method to set private variables 
+        public void setLastName(String LName) {
+            this.lastName = lastName;
         }
     }
 
