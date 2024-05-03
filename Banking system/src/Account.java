@@ -37,6 +37,6 @@ public class Account extends Customer{
         temp =getBalance();
         temp = temp -amount;
         setBalance(temp);
-        System.out.println("Amount = "+amount+" is  successfully withdrawn from the account.\n new balance is "+getBalance());
+       // System.out.println("Amount = "+amount+" is  successfully withdrawn from the account.\n new balance is "+getBalance());
     }
 }
